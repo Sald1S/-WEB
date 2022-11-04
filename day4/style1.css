@@ -1,0 +1,153 @@
+body {
+
+    background: white;
+
+    margin: 0;
+
+    color: black;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.bg-blue {
+    background-color:darkblue ;
+    color: white;
+    margin: 10px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    margin-top: 10px;
+}
+.facebook {
+    width: 50%;
+    justify-content: flex-start;
+}
+.button {
+    width: 50%;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button > button {
+    font-size: 18px;
+    background-color: darkblue; 
+    color: white;
+    border: none;  
+}
+.bg-white {
+    display: flex;
+    background-color: #fcfbf7;
+   
+    justify-content: space-between;
+}
+.profile {  
+    width: 23%;
+}
+.content { 
+    width: 52%;
+    padding: 0px 20px;
+    margin-top: -20px;
+}
+.content button {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 7px;
+}
+.news{
+    width: 24%;
+}
+.profile ul {
+    margin: 0;
+    padding: 0;
+}
+.profile img {
+    width: 100%;
+}
+.profile span {
+    color: blue;
+    padding-left: 20px;
+}
+.profile a {
+    text-decoration: none;
+}
+.profile p {
+    padding: 0px 10px 0px 10px;
+}
+.profile li {
+    border: 0.3px solid lightgrey;
+    padding: 10px 0px 10px 20px;
+    list-style-type: none;
+}
+#profile_data {
+     border: 0.3px solid lightgrey;
+}
+#profile_data h4,p {
+    padding-left: 20px;
+}
+.content img {
+    width: 100%;
+}
+.news > div > div {
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 20px ;
+}
+.news > div > div > p:nth-child(2) {
+    margin: 16px 0 0 0;
+    color: blue;
+}
+.news p:nth-child(3) {
+    color: grey;
+}
+
+.news p:nth-child(1) {
+    font-weight: 600;
+}
+.news div{
+    border: 1px solid lightgrey;
+}
+.news div {
+    padding-left: 20px;
+}
+.friends { 
+    width: 52%;
+    padding: 10px 20px;
+}
+.member {
+    display: flex;
+    justify-content: space-between;
+}
+.friends img {
+    width: 100%;
+    border-radius: 50%;
+}
+.member div:nth-child(2) {
+    width: 68%;
+}
+.member div:nth-child(3) {
+    width: 10%;
+}
+
+.member div:nth-child(1) {
+    width: 18%;
+}
+.member div:nth-child(2) button{
+    border: none;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+.member div:nth-child(3) button{
+    border: none;
+    padding: 8px;
+    background-color: red;
+    color: white;
+}
+.friends p {
+    padding: 0px;
+}
