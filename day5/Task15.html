@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var a = parseInt(prompt("num"));
+		function choose(a) {
+				if (a%380!=0) {
+					alert(parseInt(a/380) + 'USD' + ' and ' + (a/380+'').split(".")[1].substr(0,2) + 'cent')
+				}
+				else 
+					alert(a/380)
+			}
+		(choose(a));
+		
+	</script>
+</body>
+</html>

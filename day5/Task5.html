@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var n = parseInt(prompt("Insert number"));
+		var k = parseInt(prompt("Insert number"));
+		function calculate(n,k) {
+			let temp;
+			if (k%n!=0){
+				temp = k - k%n;
+			}
+			return temp/n;
+		}
+		alert(calculate(n,k));
+	</script>
+</body>
+</html>

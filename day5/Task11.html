@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var a = parseInt(prompt("Insert year"));
+		
+		function auth(a) {
+			if (a%4==0 || a%400==0 && a%100!=0){
+				return 'yes'
+			}
+			else 
+				return "no"
+		}
+		alert(auth(a))
+	</script>
+</body>
+</html>

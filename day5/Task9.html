@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var a = parseInt(prompt("Insert number"));
+		var b = parseInt(prompt('1- CONVERT TO USD\n2- CONVERT TO EUR\n3- CONVERT TO GBP'));
+		function convert(a,b) {
+			if (b == 1) {
+				return a+' KZT = '+a/380+' USD';
+			}
+			if (b == 2) {
+				return a+' KZT = '+a/430+' EUR';
+			}
+			if (b == 3) {
+				return a+' KZT = '+a/480+' GBP';
+			}
+
+		}
+		alert(convert(a,b));
+		
+	</script>
+</body>
+</html>
