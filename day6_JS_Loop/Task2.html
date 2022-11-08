@@ -9,12 +9,19 @@
 	<script>
 		var n = parseInt(prompt("Insert a number"));
 		let array = [];
-		function calculate(n,array) {
-			for (let i = n - 1;i > 0;i--){
-				array.push(i);
-			}
+		for (let i = 0;i < n;i++){
+				array.push(parseInt(prompt("Insert array")));
 		}
-		alert(calculate(n);
+		function max(array,n){
+			let max = array[0]
+			for (let i = n - 1; i >= 0;i--){
+				if (max < array[i]){
+					max = array[i];
+				}
+			}
+			return max;
+		}
+		alert(max(array,n));
 	</script>
 </body>
 </html>

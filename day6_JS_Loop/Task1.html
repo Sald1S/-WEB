@@ -9,12 +9,17 @@
 	<script>
 		var n = parseInt(prompt("Insert a number"));
 		let array = [];
-		function calculate(n,array) {
-			for (let i = n - 1;i > 0;i--){
-				array.push(i);
-			}
+		for (let i = 0;i < n;i++){
+				array.push(parseInt(prompt("Insert array")));
 		}
-		alert(calculate(n);
+		function vivod(array,n){
+			let s = ''
+			for (let i = n - 1; i >= 0;i--){
+				s += array[i] + " "
+			}
+			return s;
+		}
+		alert(vivod(array,n));
 	</script>
 </body>
 </html>

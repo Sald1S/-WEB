@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script>
+        var log = prompt("Insert a login");
+        var pass = prompt("Insert a password");
+        users = [
+            {"login":"ilyas", "password": "qwerty"},
+            {"login":"eldar", "password": "qqqqq"},
+            {"login":"assylkhan", "password": "qweqwe"},
+            {"login":"anel", "password": "asdasd"},
+            {"login":"alibek", "password": "aaaaaa"}];
+            let flag = false;
+        function find(users){
+            for(var i=0;i<users.length;i++){
+                if (users[i]['login']==log && users[i]['password']==pass) {
+                    flag = true;
+                    break;
+                }
+            } 
+            
+            if (flag == true) {
+                alert('Welcome you are authenticated')   
+            } else 
+            alert('User not found')
+        } 
+        find(users);
+    </script>
+</body>
+</html>

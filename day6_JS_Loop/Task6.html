@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script>
+        var autor = prompt("Insert a autor");
+        books = [
+            {"autor":"ilyas", "ISBN": "qwerty", "price": "1221134"},
+            {"autor":"Hasan", "ISBN": "qwerty", "price": "1232212"},
+            {"autor":"Hasan", "ISBN": "qwerty", "price": "1232214"},
+            {"autor":"Hasan", "ISBN": "qwerty", "price": "1321234"},
+            {"autor":"Tima", "ISBN": "qwerty", "price": "1233124"}]
+            let flag = false;
+            function find(books){
+                let s = ''
+            for(var i=0;i<books.length;i++){
+                if (books[i]["autor"] == autor){
+                    s+=books[i]['autor']+" "+books[i]['ISBN']+" " + books[i]['price']+"\n"
+                    // flag = true
+                }
+            } 
+            // if (flag==true) {
+                alert(s)
+            // }
+        }
+        
+        find(books);
+    </script>
+</body>
+</html>
