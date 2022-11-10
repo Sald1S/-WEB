@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script>
+        var a = prompt('INSERT [1] TO SEARCH BY NAME'+'\n'+
+                       'INSERT [2] TO SEARCH BY YEAR'+'\n'+
+                       'INSERT [3] TO SEARCH BY ENGINE VOLUME'+'\n'+
+                       'INSERT [4] TO SEARCH BY PRICE'+'\n'+
+                       'INSERT [5] TO EXIT')
+        cars = [
+                {"name":"Toyota", "price": 12000000, "year": 2015, "volume": 2.2},
+                {"name":"Mercedes", "price": 70000000, "year": 2018, "volume": 3.8},
+                {"name":"Toyota", "price": 7000000, "year": 2013, "volume": 2.0},
+                {"name":"BMW", "price": 11000000, "year": 2011, "volume": 3.0},
+                {"name":"Lexus", "price": 60000000, "year": 2017 ,"volume": 5.7}];
+        function find(cars){
+            let temp = ''
+            if (a == 1) {
+                var name = prompt('INSERT NAME OF CAR:')
+                for(var i=0;i<cars.length;i++){
+                    if (cars[i].name == name){
+                        temp += cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                    }
+                }
+                alert(temp)
+            } 
+            
+            if (a == 2) {
+                var yearStart = prompt('INSERT YEAR START FROM:')
+                var yearEnd = prompt('INSERT YEAR ENDS FROM:')
+                for(var i=0;i<cars.length;i++){
+                    if (cars[i].year >= yearStart && cars[i].year <= yearEnd) {
+                         temp += cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                    }
+                } 
+                alert(temp)
+            }
+            
+            if (a == 3) {
+                var volumeStart = parseDouble(prompt('INSERT YEAR START FROM:'))
+                var volumeEnd = parseDouble(prompt('INSERT YEAR START FROM:'))
+                for(var i=0;i<cars.length;i++){
+                    if (cars[i].volume >= volumeStart && cars[i].volume <= volumeEnd) {
+                       temp += cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                    }
+                } 
+                alert(temp)
+            }
+            if (a == 4) {
+                var priceStart = prompt('INSERT PRICE START FROM:')
+                var priceEnd = prompt('INSERT PRICE START FROM:')
+                for(var i=0;i<cars.length;i++){
+                    if (cars[i].price >= priceStart && cars[i].price <= priceEnd) {
+                         temp += cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                    }
+                } 
+                alert(temp)
+            }
+            if (a == 5) {
+                alert("end")
+            }
+        } 
+        find(cars);
+    </script>
+</body>
+</html>

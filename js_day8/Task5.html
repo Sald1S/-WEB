@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task5<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task4</title>
+	<style type="text/css">
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.small {
+			display: flex;
+			justify-content: space-between;
+			width: 55%;
+		}
+		.main {
+			width: 55%;
+		}
+		.main img {
+			width: 100%;
+		}
+		.small img {
+			width: 15%;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">	
+		<div class="main">
+			<img src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/0x0.jpg" name= "r" id="pic">
+		</div>
+		<div class="small">
+			<img onclick="change()" src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/0x0.jpg">
+			<img onclick="next()" src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/maxresdefault.jpg">
+			<img onclick="next1()" src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/rgr.jpg">
+			<img onclick="next2()" src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/_126333936_alvaromorata_getty.jpg">
+			<img onclick="next3()" src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/max-verstappen-red-bull-racing.jpg">
+		</div>
+	</div>
+	<script type="text/javascript">
+		
+		var img1 = new Image();
+		var img2 = new Image();
+		var img3 = new Image();
+		var img4 = new Image();
+		var img5 = new Image();
+		img1.src = "/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/0x0.jpg"
+		img2.src = "/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/maxresdefault.jpg"
+		img3.src = "/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/rgr.jpg"
+		img4.src = "/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/_126333936_alvaromorata_getty.jpg"
+		img5.src = "/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/max-verstappen-red-bull-racing.jpg"
+		var photo =[img1,img2,img3,img4,img5] 
+		var current = 0;
+		function change(){
+			document.images['r'].src=photo[0].src;
+		}
+		function next(){
+			document.images['r'].src=photo[1].src;
+		}
+		function next1(){
+			if(current = 2) {
+				document.images['r'].src=photo[current].src;
+			}
+		}
+		function next2(){
+			if(current = 3) {
+				document.images['r'].src=photo[current].src;
+			}
+		}
+		function next3(){
+			if(current = 4) {
+				document.images['r'].src=photo[current].src;
+			}
+		}
+	</script>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

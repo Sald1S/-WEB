@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task2</title>
+  <style type="text/css">
+    form{
+      width: 20%;
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <div id='myform'>
+    <button id= "plus">+</button>
+    <p id="lol" type="number" >0</p>
+    <button id="minus">-</button>
+  </div>
+  <script>
+    function up() {
+      var cur = parseInt(lol.innerHTML) + 1
+      lol.innerHTML = cur
+      // alert(lol.innerHTML)
+    }
+    plus.addEventListener('click', up)
+    function down() {
+      lol.innerHTML= parseInt(lol.innerHTML)-1
+      // alert(lol.innerHTML)
+    }
+    minus.addEventListener('click', down)
+    
+  </script>
+</body>
+</html>

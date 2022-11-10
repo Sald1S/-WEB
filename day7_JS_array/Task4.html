@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var n = parseInt(prompt("Insert a number"));
+		let array = [];
+		for (let i = 0;i < n;i++){
+				array.push(parseInt(prompt("Insert array")));
+		}
+		function sqrt(array,n){
+			let sum = 1
+			for (let i = 0; i < n;i++){
+				if (array[i] > 0){
+					sum*=array[i]
+				}
+			}		
+			return sum
+		}
+		alert(sqrt(array,n));
+	</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task3</title>
+	<style type="text/css">
+		.container {
+			display: flex;
+			width: 50%;
+		}
+		.first {
+			width: 25%;
+		}
+		.inputs {
+			width: 25%;
+		}
+		.card {
+			display: flex;
+			padding: 16px 0px 16px 0px;
+		}
+		.card input {
+			margin: 0px 5px 0px 5px;
+		}
+		.name {
+			padding-bottom: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="first">
+			<p>CARD</p>
+			<p>NAME SURNAME</p>
+			<p>CVV:</p>
+		</div>
+		<div class="inputs">
+			<div class="card" >
+				<input id="z" type="number" name="0">
+				<input id="x" type="number" name="1">
+				<input id="c" type="number" name="2">
+				<input id="v" type="number" name="3">
+			</div>
+			<div class="name">
+				<input type="text" name="">
+			</div>
+			<div class="cvv">
+				<input id="b" type="password" name="">
+			</div>
+		</div>
+	</div>
+	<div>
+		<button onclick="search()">Complete</button>
+	</div>
+	<script type="text/javascript">
+		 let users = [
+	   		{card: ["1234","4232","4253","4362"], cv: '123'},
+	   		{card: ["1111","1111","1111","1111"], cv: '111'},
+	   		{card: ["2222","2222","2222","2222"], cv: '222'},
+	       ];
+       		let first = document.getElementById('z')
+       		let second = document.getElementById('x')
+       		let third = document.getElementById('c')
+       		let fourth = document.getElementById('v')
+       		let fifth = document.getElementById('b')
+	       function search() {
+	       		let flag = false;
+	       		for (let a of users) {
+	       			if (a.card[0] == first.value && a.card[1] == second.value && a.card[2] == third.value && a.card[3] == fourth.value && a.cv == fifth.value) {
+	       				alert ('Welcome')
+	       				flag = true
+	       				break;
+	       			}
+	       		}
+	       		if (!flag){
+	       			alert("NO")
+	       		}
+	       }
+	</script>
+</body>
+</html>

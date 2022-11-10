@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<table cellspacing="4" cellpadding="0" border="1">
+ <tr>
+  <td>
+   <img src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/0x0.jpg" name="r" width="500" height="250">
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <input type="button" value="Назад" onClick="bck()">  
+   <input type="button" value="Вперед" onClick="frw()">
+  </td>
+ </tr>
+</table>
+	<script language="JavaScript" type="text/javascript">
+<!--
+var current=0;
+// массив картинок
+tumb= new Array();
+tumb[0]=new Image();   // картинка 1
+tumb[1]=new Image();   // картинка 2
+tumb[2]=new Image();   // картинка 3
+tumb[3]=new Image();   // картинка 4
+tumb[4]=new Image();   // картинка 5
+ 
+//сами картинки, не ошибитесь с путем...
+tumb[0].src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/0x0.jpg"
+tumb[1].src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/maxresdefault.jpg"
+tumb[2].src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/rgr.jpg"
+tumb[3].src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/_126333936_alvaromorata_getty.jpg"
+tumb[4].src="/Users/aldiyarkenjakyn/Documents/HTML/WEB/day3/imgs/max-verstappen-red-bull-racing.jpg"
+ 
+function frw(){
+	current=current+1;
+	if (current==5) {
+		current=0;
+	}
+	document.images['r'].src=tumb[current].src;
+}
+function bck(){
+	current=current-1;
+	if (current==-1) {
+		current=4;
+	}
+	document.images['r'].src=tumb[current].src;
+}
+
+</script>
+</body>
+</html>

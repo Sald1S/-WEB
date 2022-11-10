@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script>
+        
+        let users = [];
+        while(true){
+            var a = prompt('PRESS 1 TO ADD STUDENT'+'\n'+
+                       'PRESS 2 TO LIST STUDENT'+'\n'+
+                       'PRESS 0 TO EXIT')
+            if (a == 1) {
+                add()
+            }
+            if (a == 2) {
+                show()
+            }
+            if (a == 0) {
+                break
+                alert('Bye')
+            }
+        }
+        function add(){
+            let x = {}
+            x.name = prompt('INSERT NAME:')
+            x.surname = prompt('INSERT SURNAME:')
+            x.GPA = prompt('INSERT GPA:')
+            users.push(x);
+        }
+        function show() {
+            let temp =''
+            for (let i = 0; i < users.length;i++){
+                temp += users[i].name+ " " + users[i].surname+ " " + users[i].GPA + '\n'
+            }
+            alert(temp)
+        }
+    </script>
+</body>
+</html>
